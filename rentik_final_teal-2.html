@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>رنتیک | بازار امن اجاره در دانشگاه</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+:root{--ink:#17243b;--muted:#718096;--line:#e7edf4;--bg:#f5f7fb;--white:#fff;--primary:#0f766e;--primary2:#0b5f59;--teal:#34c7a5;--gold:#f4b544;--red:#e45e68;--shadow:0 12px 35px rgba(27,48,91,.08)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Vazirmatn',Tahoma,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(calc((100% - 1200px)/2),24px);position:sticky;top:0;z-index:20}.brand{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:900}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#0f766e,#34c7a5);display:grid;place-items:center;color:white;font-size:22px}.nav{display:flex;gap:7px}.nav button,.tab{border:0;background:transparent;color:#64748b;padding:10px 14px;border-radius:12px;font-weight:700}.nav button.active,.tab.active{background:#e5f5f2;color:var(--primary)}.top-actions{display:flex;align-items:center;gap:10px}.avatar{width:38px;height:38px;border-radius:50%;background:#e0f2ef;color:var(--primary);display:grid;place-items:center;font-weight:900}.btn{border:0;border-radius:12px;padding:11px 17px;font-weight:800;transition:.2s}.btn-primary{background:var(--primary);color:white}.btn-primary:hover{background:var(--primary2)}.btn-light{background:#eef2f8;color:#34445d}.btn-outline{border:1px solid #d9e1ef;background:#fff;color:#34445d}.btn-gold{background:#fff2d6;color:#9b6500}.btn-danger{background:#fff0f1;color:#c63d4b}.container{max-width:1200px;margin:28px auto;padding:0 22px}.hero{background:linear-gradient(110deg,#123047,#0f766e 58%,#34c7a5);color:white;border-radius:25px;padding:34px 38px;display:grid;grid-template-columns:1.5fr 1fr;gap:20px;align-items:center;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:300px;height:300px;border:1px solid #ffffff25;border-radius:50%;left:8%;top:-170px;box-shadow:0 0 0 35px #ffffff0a,0 0 0 70px #ffffff08}.hero h1{font-size:30px;margin:0 0 12px}.hero p{color:#dcfff6;line-height:2;margin:0 0 22px}.hero-stats{display:flex;gap:24px;margin-top:24px}.hero-stats strong{display:block;font-size:21px}.hero-art{font-size:100px;text-align:center;filter:drop-shadow(0 12px 20px #0b3d3a66)}.searchbar{display:flex;gap:10px;background:white;padding:10px;border-radius:16px;max-width:650px;box-shadow:0 8px 25px #0b514b22}.searchbar input{border:0;outline:0;flex:1;min-width:0;padding:8px 12px}.section-head{display:flex;align-items:center;justify-content:space-between;margin:30px 0 16px}.section-head h2{margin:0;font-size:21px}.muted{color:var(--muted)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.chip{border:1px solid var(--line);background:white;padding:8px 14px;border-radius:30px;color:#607087;font-weight:700}.chip.active{background:#e5f5f2;color:var(--primary);border-color:#c8e9e2}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:19px;overflow:hidden;box-shadow:0 5px 18px #1c31520a;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.item-img{height:170px;display:grid;place-items:center;font-size:72px;background:linear-gradient(135deg,#e5f5f2,#effaf7);position:relative}.badge{position:absolute;top:12px;right:12px;border-radius:8px;padding:5px 10px;font-size:11px;font-weight:900;background:#fff;color:#52617a}.badge.vip{background:#fff0ca;color:#946000}.card-body{padding:17px}.card-title{display:flex;justify-content:space-between;gap:10px;align-items:center}.card h3{font-size:16px;margin:0}.price{font-weight:900;color:var(--primary);white-space:nowrap}.price small{font-size:11px;color:#8793a6;font-weight:500}.meta{display:flex;gap:12px;color:#8491a4;font-size:12px;margin:12px 0}.card-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #f0f2f6;padding-top:12px}.rating{color:#d99921;font-size:13px}.owner{font-size:12px;color:#718096}.page{display:none}.page.active{display:block}.panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 5px 18px #1c31520a}.profile-head{display:flex;align-items:center;gap:18px;padding-bottom:22px;border-bottom:1px solid var(--line)}.big-avatar{width:76px;height:76px;border-radius:24px;background:#e0f2ef;display:grid;place-items:center;font-size:32px;color:var(--primary)}.profile-tabs{display:flex;gap:8px;border-bottom:1px solid var(--line);margin:20px 0}.profile-content{min-height:180px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}.stat{background:#f7f9fc;padding:16px;border-radius:14px}.stat strong{font-size:22px;display:block}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field label{font-size:13px;font-weight:800;color:#53627a}.field input,.field select,.field textarea{border:1px solid #dfe6ef;border-radius:11px;padding:12px;background:white;outline:none}.field input:focus,.field textarea:focus{border-color:#69b9aa}.full{grid-column:1/-1}.notice{padding:14px 16px;background:#eef7ff;border-radius:13px;color:#315b89;line-height:1.9;font-size:13px;margin:15px 0}.notice.green{background:#eaf8f3;color:#17775f}.notice.gold{background:#fff7e6;color:#92620c}.steps{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.step{flex:1;min-width:120px;padding:12px;background:#f5f7fb;border-radius:12px;font-size:12px;color:#7a879a}.step b{display:block;color:#34445d;font-size:13px;margin-bottom:4px}.step.done{background:#eaf8f3;color:#16866c}.step.done b{color:#16866c}.modal-back{display:none;position:fixed;inset:0;background:#0e193b88;z-index:50;align-items:center;justify-content:center;padding:18px}.modal-back.show{display:flex}.modal{width:min(620px,100%);max-height:90vh;overflow:auto;background:white;border-radius:20px;padding:24px;box-shadow:0 25px 70px #07132f55}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.close{border:0;background:#f1f4f8;border-radius:10px;width:35px;height:35px;font-size:20px}.pay-methods{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.pay-method{border:1px solid var(--line);padding:14px;border-radius:12px;text-align:center;background:white}.pay-method.selected{border:2px solid var(--primary);background:#effaf7}.empty{text-align:center;padding:35px;color:#8390a4}.vip-banner{background:linear-gradient(110deg,#35265e,#7d55bd);color:white;border-radius:18px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:20px}.vip-banner p{color:#e6dfff;margin-bottom:0}.upload-box{border:1px dashed #b9c7dc;border-radius:13px;padding:16px;text-align:center;color:#78879d;background:#fafcff}.toast{position:fixed;bottom:24px;left:24px;background:#17243b;color:white;padding:13px 20px;border-radius:12px;box-shadow:var(--shadow);opacity:0;transform:translateY(15px);transition:.25s;z-index:80}.toast.show{opacity:1;transform:translateY(0)}footer{text-align:center;color:#95a0b1;font-size:12px;padding:35px 10px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr}.hero-art{display:none}.nav{display:none}.topbar{padding:0 15px}}@media(max-width:570px){.grid{grid-template-columns:1fr}.hero{padding:25px}.hero h1{font-size:23px}.hero-stats{gap:13px}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.top-actions .btn{padding:9px}.container{padding:0 13px}.vip-banner{display:block}.stats{grid-template-columns:1fr 1fr}}
+</style>
+<meta name="theme-color" content="#0f766e"><meta name="description" content="رنتیک؛ بازار امن اجاره کالا در دانشگاه با ودیعه، امتیازدهی و ثبت وضعیت تحویل."></head>
+<body>
+<header class="topbar">
+ <div class="brand"><div class="logo">↗</div> رنتیک <span style="font-size:11px;color:#8a96a9;font-weight:600">بازار امن اجاره دانشگاه</span></div>
+ <nav class="nav"><button class="active" data-page="home">بازار کالا</button><button data-page="myrentals">اجاره‌های من</button><button data-page="vip">جایگاه VIP</button><button data-page="profile">پروفایل من</button></nav>
+ <div class="top-actions"><button class="btn btn-primary" onclick="openModal('addModal')">＋ ثبت آگهی</button><div class="avatar" onclick="showPage('profile')" title="پروفایل">ع</div></div>
+</header>
+<main class="container"><div class="notice gold" style="margin:0 0 18px">نسخه نمایشی پروژه: آگهی‌ها، نام‌ها، امتیازها و پرداخت‌ها نمونه‌اند و واقعی نیستند.</div>
+<section id="home" class="page active">
+ <div class="hero"><div><div style="font-size:12px;font-weight:800;color:#c9fff1;margin-bottom:8px">اقتصاد اشتراکی در دانشگاه شما</div><h1>چیزی لازم داری؟ لازم نیست بخری!</h1><p>وسایل دانشجویی را از هم‌دانشگاهی‌هایت با خیال راحت اجاره کن؛ با ودیعه امن، ثبت وضعیت کالا و امتیازدهی دوطرفه.</p>
+ <div class="searchbar"><input id="searchInput" placeholder="مثلاً ماشین‌حساب، دوربین، کتاب..."><button class="btn btn-primary" onclick="renderItems()">جستجو</button></div>
+ <div class="hero-stats"><div><strong>۴</strong><small>دسته‌بندی</small></div><div><strong>۵٪</strong><small>جریمه‌ی روزانه‌ی تأخیر</small></div><div><strong>۲ عکس</strong><small>قبل و بعد از تحویل</small></div></div></div><div class="hero-art">🎒</div></div>
+ <div class="section-head"><div><h2>آگهی‌های پیشنهادی</h2><span class="muted" style="font-size:12px">از جامعه دانشگاهی خودت اجاره کن</span></div><button class="btn btn-light" onclick="showPage('vip')">آگهی VIP چیست؟</button></div>
+ <div class="filters"><button class="chip active" data-cat="همه">همه</button><button class="chip" data-cat="دیجیتال">دیجیتال</button><button class="chip" data-cat="آموزشی">آموزشی</button><button class="chip" data-cat="ورزشی">ورزشی</button><button class="chip" data-cat="ابزار">ابزار</button></div>
+ <div class="grid" id="itemGrid"></div>
+</section>
+<section id="myrentals" class="page"><div class="section-head"><h2>اجاره‌های من</h2><span class="muted">مدیریت سفارش‌ها و تعهدات</span></div><div class="panel"><div class="steps"><div class="step done"><b>۱. درخواست اجاره</b>ثبت درخواست و توافق</div><div class="step done"><b>۲. پرداخت ودیعه</b>نگهداری امن در سامانه</div><div class="step"><b>۳. تحویل کالا</b>ثبت عکس قبل از تحویل</div><div class="step"><b>۴. بازگشت کالا</b>عکس بعد از تحویل و تسویه</div></div><div class="notice gold">⚠️ جریمه دیرکرد: در این نمونه، برای هر روز تأخیر ۵٪ مبلغ اجاره روزانه به مبلغ تسویه اضافه می‌شود. مقدار نهایی باید در قرارداد هر آگهی مشخص شود.</div><div id="rentalList" class="empty">هنوز اجاره‌ای ثبت نکرده‌اید. از بازار کالا یک مورد انتخاب کنید.</div></div></section>
+<section id="vip" class="page"><div class="vip-banner"><div><h2 style="margin:0">⭐ آگهی تو، بالاتر از بقیه</h2><p>با فعال‌سازی VIP آگهی در ابتدای فهرست نمایش داده می‌شود تا بیشتر دیده شود.</p></div><div style="font-size:48px">👑</div></div><div class="grid"><div class="panel"><div style="font-size:35px">🥉</div><h3>VIP یک‌روزه</h3><h2>۲۹٬۰۰۰ تومان</h2><p class="muted">نمایش ویژه به مدت ۲۴ ساعت</p><button class="btn btn-primary" onclick="vipPay('یک‌روزه',29000)">انتخاب و پرداخت</button></div><div class="panel" style="border:2px solid #d9b35b"><div style="font-size:35px">🥇</div><span class="badge vip" style="position:static">پیشنهاد محبوب</span><h3>VIP سه‌روزه</h3><h2>۶۹٬۰۰۰ تومان</h2><p class="muted">نمایش ویژه به مدت ۷۲ ساعت</p><button class="btn btn-primary" onclick="vipPay('سه‌روزه',69000)">انتخاب و پرداخت</button></div><div class="panel"><div style="font-size:35px">💎</div><h3>VIP هفت‌روزه</h3><h2>۱۲۹٬۰۰۰ تومان</h2><p class="muted">نمایش ویژه به مدت یک هفته</p><button class="btn btn-primary" onclick="vipPay('هفت‌روزه',129000)">انتخاب و پرداخت</button></div></div><div class="notice">پرداخت VIP در این نسخه نمایشی شبیه‌سازی می‌شود و هیچ پول واقعی جابه‌جا نمی‌شود.</div></section>
+<section id="profile" class="page"><div class="panel"><div class="profile-head"><div class="big-avatar">ع</div><div style="flex:1"><h2 style="margin:0 0 4px">علی رضایی <span class="badge" style="position:static;background:#eaf8f3;color:#16866c">✓ دانشجوی تأییدشده</span></h2><div class="muted">دانشکده مهندسی · عضو از مهر ۱۴۰۵</div><div class="rating">★★★★★ <span class="muted">۴.۹ از ۵ (۱۲ نظر)</span></div></div><button class="btn btn-outline" onclick="toast('ویرایش پروفایل در نسخه بعدی فعال می‌شود')">ویرایش پروفایل</button></div><div class="stats"><div class="stat"><strong>۸</strong><span class="muted">اجاره موفق</span></div><div class="stat"><strong>۱۰۰٪</strong><span class="muted">تحویل به‌موقع</span></div><div class="stat"><strong>۴.۹</strong><span class="muted">امتیاز کلی</span></div></div><div class="profile-tabs"><button class="tab active" data-tab="myads">آگهی‌های من</button><button class="tab" data-tab="reviews">نظرات</button><button class="tab" data-tab="wallet">کیف پول و پرداخت</button><button class="tab" data-tab="security">امنیت و قوانین</button></div><div id="profileContent" class="profile-content"><div class="empty">آگهی‌های ثبت‌شده شما در این بخش نمایش داده می‌شوند.</div></div></div></section>
+</main>
+<footer>رنتیک © ۱۴۰۵ · نسخه نمایشی پروژه درس فناوری اطلاعات · پرداخت‌ها واقعی نیستند</footer>
+<div class="modal-back" id="addModal"><div class="modal"><div class="modal-head"><h3>ثبت آگهی جدید</h3><button class="close" onclick="closeModal('addModal')">×</button></div><div class="form-grid"><div class="field"><label>نام کالا</label><input id="newName" placeholder="مثلاً دوربین عکاسی"></div><div class="field"><label>دسته‌بندی</label><select id="newCat"><option>دیجیتال</option><option>آموزشی</option><option>ورزشی</option><option>ابزار</option></select></div><div class="field"><label>اجاره روزانه (تومان)</label><input id="newPrice" type="number" placeholder="50000"></div><div class="field"><label>ودیعه قابل استرداد (تومان)</label><input id="newDeposit" type="number" placeholder="500000"></div><div class="field full"><label>توضیحات و شرایط</label><textarea id="newDesc" rows="3" placeholder="وضعیت کالا، شرایط استفاده و محل تحویل..."></textarea></div><div class="field full"><label>تصویر کالا</label><input id="newPhoto" type="file" accept="image/*"></div></div><div class="notice">با ثبت آگهی تأیید می‌کنید که مالک کالا هستید و شرایط اجاره را دقیق نوشته‌اید.</div><button class="btn btn-primary" style="width:100%" onclick="addItem()">ثبت آگهی</button></div></div>
+<div class="modal-back" id="detailModal"><div class="modal"><div class="modal-head"><h3 id="detailTitle">جزئیات کالا</h3><button class="close" onclick="closeModal('detailModal')">×</button></div><div id="detailBody"></div></div></div>
+<div class="modal-back" id="payModal"><div class="modal"><div class="modal-head"><h3>درگاه پرداخت امن رنتیک</h3><button class="close" onclick="closeModal('payModal')">×</button></div><div id="paySummary" class="notice"></div><div class="field"><label>روش پرداخت</label><div class="pay-methods"><button class="pay-method selected" onclick="selectPay(this)">💳 کارت بانکی</button><button class="pay-method" onclick="selectPay(this)">📱 کیف پول</button><button class="pay-method" onclick="selectPay(this)">🏦 پرداخت دانشگاه</button></div></div><div class="form-grid" style="margin-top:15px"><div class="field full"><label>شماره کارت (نمایشی)</label><input placeholder="6037 ــــــ ــــــ 1234" maxlength="19"></div><div class="field"><label>تاریخ انقضا</label><input placeholder="MM/YY"></div><div class="field"><label>CVV2</label><input placeholder="***"></div></div><div class="notice gold">🔒 این فقط رابط نمایشی درگاه است؛ اطلاعات کارت را وارد نکنید. تراکنش واقعی انجام نمی‌شود و اطلاعاتی ذخیره نخواهد شد.</div><button class="btn btn-primary" style="width:100%" onclick="completePayment()">تأیید پرداخت نمایشی</button></div></div>
+<div class="toast" id="toast"></div>
+<!-- <script>
+let items=[
+{id:1,name:'دوربین عکاسی Canon',cat:'دیجیتال',price:180000,deposit:2000000,icon:'📷',owner:'سارا محمدی',rating:'۴.۹',vip:true,desc:'دوربین سالم و تمیز، مناسب پروژه‌های عکاسی. همراه با کیف و باتری اضافه.'},
+{id:2,name:'ماشین حساب مهندسی',cat:'آموزشی',price:35000,deposit:300000,icon:'🧮',owner:'علی رضایی',rating:'۵.۰',vip:false,desc:'ماشین حساب مهندسی سالم، مناسب امتحانات و کلاس‌ها.'},
+{id:3,name:'دریل شارژی',cat:'ابزار',price:90000,deposit:800000,icon:'🛠️',owner:'مهدی کریمی',rating:'۴.۸',vip:true,desc:'دریل شارژی به همراه دو باتری و سری‌های مختلف.'},
+{id:4,name:'راکت بدمینتون',cat:'ورزشی',price:50000,deposit:400000,icon:'🏸',owner:'نگار احمدی',rating:'۴.۷',vip:false,desc:'یک جفت راکت سالم، مناسب استفاده دانشجویی.'},
+{id:5,name:'تبلت طراحی',cat:'دیجیتال',price:120000,deposit:1200000,icon:'✍️',owner:'آرمان صالحی',rating:'۴.۹',vip:false,desc:'تبلت طراحی با قلم، مناسب طراحی و یادداشت‌برداری.'},
+{id:6,name:'کتاب مرجع فیزیک',cat:'آموزشی',price:25000,deposit:150000,icon:'📚',owner:'هستی نوری',rating:'۴.۶',vip:false,desc:'چاپ تمیز و بدون یادداشت‌نویسی.'}
+];let selectedItem=null,pendingAction=null,filter='همه',rentals=[];
+const money=n=>Number(n).toLocaleString('fa-IR')+' تومان';
+function renderItems(){let q=document.getElementById('searchInput').value.trim();let arr=items.filter(x=>(filter==='همه'||x.cat===filter)&&(!q||x.name.includes(q)||x.desc.includes(q)));arr.sort((a,b)=>Number(b.vip)-Number(a.vip));document.getElementById('itemGrid').innerHTML=arr.map(x=>`<article class="card"><div class="item-img">${x.icon}<span class="badge ${x.vip?'vip':''}">${x.vip?'⭐ VIP':'دانشجویی'}</span></div><div class="card-body"><div class="card-title"><h3>${x.name}</h3><div class="price">${money(x.price)}<small>/ روز</small></div></div><div class="meta"><span>▦ ${x.cat}</span><span>🛡 ودیعه ${money(x.deposit)}</span></div><div class="card-foot"><div><div class="rating">★ ${x.rating}</div><div class="owner">${x.owner}</div></div><button class="btn btn-primary" onclick="showDetail(${x.id})">مشاهده و اجاره</button></div></div></article>`).join('')||'<div class="empty">موردی پیدا نشد.</div>'}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'});if(id==='myrentals')renderRentals()}
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.cat;renderItems()}));
+function openModal(id){document.getElementById(id).classList.add('show')}function closeModal(id){document.getElementById(id).classList.remove('show')}
+function showDetail(id){selectedItem=items.find(x=>x.id===id);document.getElementById('detailTitle').textContent=selectedItem.name;document.getElementById('detailBody').innerHTML=`<div style="font-size:65px;text-align:center;background:#f1f5ff;padding:20px;border-radius:14px">${selectedItem.icon}</div><p>${selectedItem.desc}</p><div class="stats"><div class="stat"><strong>${money(selectedItem.price)}</strong><span>اجاره روزانه</span></div><div class="stat"><strong>${money(selectedItem.deposit)}</strong><span>ودیعه امن</span></div></div><div class="form-grid"><div class="field"><label>مدت اجاره (روز)</label><input id="days" type="number" min="1" value="2"></div><div class="field"><label>تاریخ بازگشت</label><input id="returnDate" type="date"></div></div><div class="notice green">🛡 ودیعه تا زمان بازگشت کالا نزد سامانه امانی می‌ماند. پس از تأیید سلامت کالا، به اجاره‌کننده بازگردانده می‌شود.</div><div class="field"><label>عکس وضعیت کالا هنگام تحویل (اختیاری در پیش‌نمایش)</label><input id="beforePhoto" type="file" accept="image/*"></div><button class="btn btn-primary" style="width:100%;margin-top:15px" onclick="rentItem()">درخواست اجاره و پرداخت ودیعه</button>`;openModal('detailModal')}
+function rentItem(){let days=Math.max(1,Number(document.getElementById('days').value)||1);let total=selectedItem.price*days+selectedItem.deposit;pendingAction={type:'rent',item:selectedItem,days,total};closeModal('detailModal');document.getElementById('paySummary').innerHTML=`<b>خلاصه پرداخت برای ${selectedItem.name}</b><br>اجاره ${days} روز: ${money(selectedItem.price*days)}<br>ودیعه قابل استرداد: ${money(selectedItem.deposit)}<hr>مبلغ پرداخت نمایشی: <b>${money(total)}</b>`;openModal('payModal')}
+function vipPay(plan,price){pendingAction={type:'vip',plan,price};document.getElementById('paySummary').innerHTML=`فعال‌سازی جایگاه VIP ${plan}<br>مبلغ: <b>${money(price)}</b><br><small>در این نمونه، آگهی اول شما به‌صورت نمایشی ویژه می‌شود.</small>`;openModal('payModal')}
+function completePayment(){if(!pendingAction)return;if(pendingAction.type==='rent'){let r={...pendingAction,id:Date.now(),status:'در انتظار تحویل',before:false,after:false};rentals.push(r);toast('پرداخت نمایشی موفق بود؛ درخواست اجاره ثبت شد.');}else{toast('پرداخت نمایشی موفق بود؛ VIP فعال شد.');if(items.length)items[0].vip=true;}pendingAction=null;closeModal('payModal');renderItems();renderRentals()}
+function renderRentals(){let el=document.getElementById('rentalList');if(!rentals.length){el.className='empty';el.innerHTML='هنوز اجاره‌ای ثبت نکرده‌اید. از بازار کالا یک مورد انتخاب کنید.';return}el.className='';el.innerHTML=rentals.map(r=>`<div class="panel" style="margin:12px 0"><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><div><h3>${r.item.icon} ${r.item.name}</h3><span class="muted">مدت: ${r.days} روز · وضعیت: ${r.status}</span></div><b style="color:var(--primary)">${money(r.total)}</b></div><div class="steps"><div class="step done"><b>پرداخت</b>ودیعه در امانت</div><div class="step ${r.before?'done':''}"><b>عکس قبل از تحویل</b>${r.before?'ثبت شده':'در انتظار ثبت'}</div><div class="step ${r.after?'done':''}"><b>عکس بعد از تحویل</b>${r.after?'ثبت شده':'در انتظار ثبت'}</div><div class="step"><b>تسویه ودیعه</b>پس از تأیید</div></div><div class="form-grid"><div class="field"><label>ثبت عکس قبل از تحویل</label><input type="file" accept="image/*" onchange="photoStep(${r.id},'before',this)"></div><div class="field"><label>ثبت عکس بعد از تحویل</label><input type="file" accept="image/*" onchange="photoStep(${r.id},'after',this)"></div></div><div class="notice gold">در صورت تأخیر، جریمه نمونه ${money(Math.ceil(r.item.price*.05))} به ازای هر روز تأخیر محاسبه می‌شود.</div><button class="btn btn-outline" onclick="finishRental(${r.id})">ثبت بازگشت کالا و درخواست آزادسازی ودیعه</button></div>`).join('')}
+function photoStep(id,step,input){if(!input.files.length)return;let r=rentals.find(x=>x.id===id);r[step]=true;toast('عکس در پیش‌نمایش ثبت شد.');renderRentals()}
+function finishRental(id){let r=rentals.find(x=>x.id===id);if(!r.before||!r.after){toast('برای تکمیل، عکس قبل و بعد از تحویل را ثبت کنید.');return}r.status='بازگشت ثبت شد؛ آماده بررسی ودیعه';renderRentals();toast('درخواست آزادسازی ودیعه ثبت شد.')}
+function addItem(){let name=document.getElementById('newName').value.trim(),price=Number(document.getElementById('newPrice').value),deposit=Number(document.getElementById('newDeposit').value);if(!name||!price||!deposit){toast('نام کالا، اجاره روزانه و ودیعه را کامل کنید.');return}let file=document.getElementById('newPhoto').files[0];let x={id:Date.now(),name,cat:document.getElementById('newCat').value,price,deposit,icon:'📦',owner:'علی رضایی',rating:'جدید',vip:false,desc:document.getElementById('newDesc').value||'آگهی جدید دانشجویی'};items.unshift(x);closeModal('addModal');renderItems();toast('آگهی با موفقیت ثبت شد.');['newName','newPrice','newDeposit','newDesc','newPhoto'].forEach(id=>document.getElementById(id).value='')}
+function selectPay(el){document.querySelectorAll('.pay-method').forEach(x=>x.classList.remove('selected'));el.classList.add('selected')}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');let c=document.getElementById('profileContent');let map={myads:'آگهی‌های ثبت‌شده شما در این بخش نمایش داده می‌شوند. برای ثبت آگهی از دکمه بالای صفحه استفاده کنید.',reviews:'<div class="notice green">★★★★★ سارا محمدی: تحویل به‌موقع و کالای کاملاً سالم. تجربه عالی!</div><div class="notice">★★★★☆ مهدی کریمی: ارتباط خوب و پاسخ‌گویی سریع.</div>',wallet:'<div class="stat"><strong>۰ تومان</strong><span>موجودی کیف پول نمایشی</span></div><p class="muted">تراکنش‌ها و بازگشت ودیعه پس از تأیید در این قسمت نمایش داده می‌شوند.</p>',security:'<div class="notice green">✓ تأیید هویت دانشگاهی<br>✓ ودیعه امانی تا پایان اجاره<br>✓ ثبت مستندات تصویری قبل و بعد از تحویل<br>✓ امتیازدهی دوطرفه پس از تکمیل اجاره</div>'};c.innerHTML=map[b.dataset.tab]}));
+function toast(msg){let t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000)}
+renderItems();
+</script> -->
+
+<style>
+/* امکانات تکمیلی نسخه نهایی */
+.extra-tools{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 14px}
+.extra-tools select{border:1px solid var(--line);background:#fff;border-radius:11px;padding:10px;color:#52627a}
+.icon-btn{border:1px solid var(--line);background:#fff;border-radius:11px;padding:9px 12px;color:#52627a;font-weight:800}
+.favorite-btn{position:absolute;left:12px;top:12px;border:0;border-radius:50%;width:36px;height:36px;background:#fff;color:#e45e68;font-size:19px;box-shadow:0 3px 12px #14213d18}
+.favorite-btn.on{background:#fff0f1}.quick-actions{display:flex;gap:7px}.quick-actions .btn{padding:8px 10px;font-size:12px}
+.trust-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}.trust-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:15px;display:flex;gap:10px;align-items:center}.trust-card span{font-size:24px}.trust-card b{display:block;font-size:13px}.trust-card small{color:#8995a7}
+.notif-wrap{position:relative}.notif-menu{display:none;position:absolute;left:0;top:48px;width:290px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:14px;padding:14px;z-index:40}.notif-menu.show{display:block}.notif-item{font-size:12px;padding:10px 0;border-bottom:1px solid var(--line);line-height:1.8}
+.chat-box{height:210px;overflow:auto;background:#f7f9fc;border-radius:13px;padding:12px;margin:12px 0}.bubble{padding:9px 12px;border-radius:13px;background:#e0f2ef;margin:8px 0;max-width:85%;font-size:13px}.bubble.mine{background:#e4f6ef;margin-right:auto}
+.review-stars{display:flex;gap:7px;font-size:27px;color:#d5dbe5}.review-stars span{cursor:pointer}.review-stars span.selected{color:#e5a52f}
+.item-img{overflow:hidden}.item-img .item-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#detailBody .item-photo{display:block;width:100%;height:240px;object-fit:cover;border-radius:14px}
+h3 .item-photo{width:38px;height:38px;border-radius:9px;object-fit:cover;vertical-align:middle}
+.thumbs{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0}.thumbs figure{margin:0;text-align:center}.thumbs img{width:150px;height:110px;object-fit:cover;border-radius:12px;border:1px solid var(--line)}.thumbs figcaption{font-size:12px;color:#718096;margin-top:5px}
+@media(max-width:700px){.trust-row{grid-template-columns:repeat(2,1fr)}.extra-tools{align-items:stretch}.extra-tools select{flex:1}}
+</style>
+<div class="modal-back" id="chatModal"><div class="modal"><div class="modal-head"><h3 id="chatTitle">گفت‌وگو با صاحب کالا</h3><button class="close" onclick="closeModal('chatModal')">×</button></div><div class="notice green">💬 برای هماهنگی زمان و محل تحویل از این گفت‌وگوی نمونه استفاده کن.</div><div class="chat-box" id="chatBox"><div class="bubble">سلام! برای هماهنگی تحویل کالا در خدمتت هستم.</div></div><div style="display:flex;gap:8px"><input id="chatInput" placeholder="پیامت را بنویس..." style="flex:1;min-width:0;border:1px solid var(--line);border-radius:11px;padding:11px"><button class="btn btn-primary" onclick="sendChat()">ارسال</button></div></div></div>
+<div class="modal-back" id="reviewModal"><div class="modal"><div class="modal-head"><h3>ثبت تجربه و امتیاز</h3><button class="close" onclick="closeModal('reviewModal')">×</button></div><p class="muted">به تجربه اجاره‌ات امتیاز بده تا اعتماد در جامعه دانشگاهی بیشتر شود.</p><div class="review-stars" id="reviewStars"><span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span></div><div class="field" style="margin:15px 0"><label>نظر شما</label><textarea id="reviewText" rows="3" placeholder="از تجربه‌ات بگو..."></textarea></div><button class="btn btn-primary" style="width:100%" onclick="submitReview()">ثبت نظر</button></div></div>
+<div class="modal-back" id="reportModal"><div class="modal"><div class="modal-head"><h3>گزارش مشکل یا اختلاف</h3><button class="close" onclick="closeModal('reportModal')">×</button></div><div class="field"><label>موضوع گزارش</label><select id="reportType"><option>آسیب به کالا</option><option>عدم بازگشت کالا</option><option>مغایرت توضیحات آگهی</option><option>رفتار نامناسب</option><option>سایر موارد</option></select></div><div class="field" style="margin:14px 0"><label>شرح موضوع</label><textarea id="reportText" rows="4" placeholder="جزئیات اتفاق را بنویس..."></textarea></div><button class="btn btn-primary" style="width:100%" onclick="submitReport()">ارسال گزارش به پشتیبانی</button></div></div>
+
+<!-- <script>
+/* لایه امکانات افزوده */
+let favorites = new Set(JSON.parse(localStorage.getItem('rentik_favorites')||'[]'));
+let sortMode='default', activeReviewRental=null, reviewScore=5;
+let extraMessages=[];
+function saveFavorites(){localStorage.setItem('rentik_favorites',JSON.stringify([...favorites]))}
+function enhancedRenderItems(){
+ const q=document.getElementById('searchInput').value.trim();
+ let arr=items.filter(x=>(filter==='همه'||x.cat===filter)&&(!q||x.name.includes(q)||x.desc.includes(q)));
+ if(sortMode==='cheap')arr.sort((a,b)=>a.price-b.price);
+ else if(sortMode==='expensive')arr.sort((a,b)=>b.price-a.price);
+ else if(sortMode==='rating')arr.sort((a,b)=>parseFloat(b.rating)-parseFloat(a.rating));
+ else arr.sort((a,b)=>Number(b.vip)-Number(a.vip));
+ document.getElementById('itemGrid').innerHTML=arr.map(x=>`<article class="card"><div class="item-img">${x.icon}<span class="badge ${x.vip?'vip':''}">${x.vip?'⭐ VIP':'دانشجویی'}</span><button class="favorite-btn ${favorites.has(x.id)?'on':''}" title="علاقه‌مندی" onclick="toggleFavorite(${x.id})">${favorites.has(x.id)?'♥':'♡'}</button></div><div class="card-body"><div class="card-title"><h3>${x.name}</h3><div class="price">${money(x.price)}<small>/ روز</small></div></div><div class="meta"><span>▦ ${x.cat}</span><span>🛡 ودیعه ${money(x.deposit)}</span></div><div class="card-foot"><div><div class="rating">★ ${x.rating}</div><div class="owner">${x.owner}</div></div><div class="quick-actions"><button class="btn btn-light" title="پیام به صاحب کالا" onclick="openChat('${x.owner}')">پیام</button><button class="btn btn-primary" onclick="showDetail(${x.id})">اجاره</button></div></div></div></article>`).join('')||'<div class="empty">موردی پیدا نشد.</div>';
+}
+renderItems=enhancedRenderItems;
+function toggleFavorite(id){favorites.has(id)?favorites.delete(id):favorites.add(id);saveFavorites();renderItems();toast(favorites.has(id)?'به علاقه‌مندی‌ها اضافه شد.':'از علاقه‌مندی‌ها حذف شد.')}
+function openChat(owner){document.getElementById('chatTitle').textContent='گفت‌وگو با '+owner;document.getElementById('chatBox').innerHTML='<div class="bubble">سلام! برای هماهنگی زمان و محل تحویل کالا در خدمتت هستم.</div>';openModal('chatModal')}
+function sendChat(){let inp=document.getElementById('chatInput');if(!inp.value.trim())return;let box=document.getElementById('chatBox');box.innerHTML+=`<div class="bubble mine">${escapeText(inp.value)}</div>`;inp.value='';box.scrollTop=box.scrollHeight;toast('پیام در نمونه نمایشی ارسال شد.')}
+function escapeText(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function submitReport(){if(!document.getElementById('reportText').value.trim()){toast('لطفاً شرح مشکل را بنویسید.');return}closeModal('reportModal');document.getElementById('reportText').value='';toast('گزارش شما ثبت نمایشی شد؛ تیم پشتیبانی بررسی می‌کند.')}
+function submitReview(){if(!activeReviewRental)return;activeReviewRental.reviewed=true;closeModal('reviewModal');toast('امتیاز و نظر شما ثبت شد. ممنون از مشارکتت!');renderRentals()}
+document.querySelectorAll('#reviewStars span').forEach(s=>s.addEventListener('click',()=>{reviewScore=Number(s.dataset.v);document.querySelectorAll('#reviewStars span').forEach(x=>x.classList.toggle('selected',Number(x.dataset.v)<=reviewScore))}));
+const oldFinishRental=finishRental;
+finishRental=function(id){let r=rentals.find(x=>x.id===id);if(!r.before||!r.after){toast('برای تکمیل، عکس قبل و بعد از تحویل را ثبت کنید.');return}r.status='بازگشت ثبت شد؛ آماده بررسی ودیعه';renderRentals();toast('درخواست آزادسازی ودیعه ثبت شد.');activeReviewRental=r;setTimeout(()=>{document.getElementById('reviewStars').querySelectorAll('span').forEach(x=>x.classList.toggle('selected',Number(x.dataset.v)<=5));openModal('reviewModal')},350)}
+const oldRenderRentals=renderRentals;
+renderRentals=function(){oldRenderRentals();document.querySelectorAll('#rentalList .panel').forEach((p,i)=>{if(!p.querySelector('.report-action')){let b=document.createElement('button');b.className='btn btn-danger report-action';b.style.marginRight='8px';b.textContent='گزارش مشکل';b.onclick=()=>openModal('reportModal');p.appendChild(b)}})}
+/* ابزار مرتب‌سازی و اعلان‌ها */
+const tools=document.createElement('div');tools.className='extra-tools';tools.innerHTML='<span class="muted" style="font-size:13px;font-weight:800">مرتب‌سازی:</span><select id="sortSelect"><option value="default">ویژه‌ها در ابتدا</option><option value="cheap">ارزان‌ترین اجاره</option><option value="expensive">گران‌ترین اجاره</option><option value="rating">بالاترین امتیاز</option></select><button class="icon-btn" onclick="showFavorites()">♥ علاقه‌مندی‌های من</button><button class="icon-btn" onclick="openModal(\'reportModal\')">⚑ مرکز گزارش مشکل</button>';
+document.querySelector('.filters').after(tools);
+document.getElementById('sortSelect').addEventListener('change',e=>{sortMode=e.target.value;renderItems()});
+function showFavorites(){let saved=filter;filter='همه';renderItems();let q=document.getElementById('searchInput');q.value='';let arr=items.filter(x=>favorites.has(x.id));document.getElementById('itemGrid').innerHTML=arr.length?arr.map(x=>`<article class="card"><div class="item-img">${x.icon}<span class="badge vip">♥ ذخیره‌شده</span></div><div class="card-body"><h3>${x.name}</h3><p class="price">${money(x.price)} / روز</p><button class="btn btn-primary" onclick="showDetail(${x.id})">مشاهده و اجاره</button></div></article>`).join(''):'<div class="empty">هنوز کالایی ذخیره نکرده‌ای.</div>';toast('فهرست علاقه‌مندی‌ها')}
+const notif=document.createElement('div');notif.className='notif-wrap';notif.innerHTML='<button class="icon-btn" onclick="document.getElementById(\'notifMenu\').classList.toggle(\'show\')">🔔 <span style="color:#e45e68">●</span></button><div class="notif-menu" id="notifMenu"><b>اعلان‌ها</b><div class="notif-item">🎉 به رنتیک خوش آمدی! آگهی‌های جدید را ببین.</div><div class="notif-item">🛡 ودیعه پس از تأیید بازگشت کالا آزاد می‌شود.</div><div class="notif-item">⭐ با ثبت نظر، به اعتماد جامعه دانشگاهی کمک کن.</div></div>';
+document.querySelector('.top-actions').prepend(notif);
+const trust=document.createElement('div');trust.className='trust-row';trust.innerHTML='<div class="trust-card"><span>🛡️</span><div><b>ودیعه امانی</b><small>بازگشت پس از تأیید</small></div></div><div class="trust-card"><span>📸</span><div><b>مستندسازی تحویل</b><small>عکس قبل و بعد</small></div></div><div class="trust-card"><span>⭐</span><div><b>اعتبار دوطرفه</b><small>نظر پس از اجاره</small></div></div><div class="trust-card"><span>⚖️</span><div><b>مرکز حل اختلاف</b><small>ثبت و پیگیری گزارش</small></div></div>';
+document.querySelector('.hero').after(trust);
+/* آپلود عکس برای آگهی و برای قبل و بعد از تحویل */
+function readImage(file,cb){var fr=new FileReader();fr.onerror=function(){cb(null)};fr.onload=function(){var img=new Image();img.onerror=function(){cb(fr.result)};img.onload=function(){var s=Math.min(1,900/Math.max(img.width,img.height)),c=document.createElement('canvas');c.width=Math.max(1,Math.round(img.width*s));c.height=Math.max(1,Math.round(img.height*s));c.getContext('2d').drawImage(img,0,0,c.width,c.height);cb(c.toDataURL('image/jpeg',0.82))};img.src=fr.result};fr.readAsDataURL(file)}
+function photoTag(d){return '<img class="item-photo" alt="" src="'+d+'">'}
+addItem=function(){
+ var name=document.getElementById('newName').value.trim(),price=Number(document.getElementById('newPrice').value),deposit=Number(document.getElementById('newDeposit').value);
+ if(!name||!price||!deposit){toast('نام کالا، اجاره روزانه و ودیعه را کامل کنید.');return}
+ var file=document.getElementById('newPhoto').files[0];
+ var finish=function(d){
+  items.unshift({id:Date.now(),name:name,cat:document.getElementById('newCat').value,price:price,deposit:deposit,icon:d?photoTag(d):'📦',owner:'علی رضایی',rating:'جدید',vip:false,desc:document.getElementById('newDesc').value||'آگهی جدید دانشجویی'});
+  closeModal('addModal');
+  filter='همه';document.querySelectorAll('.chip').forEach(function(c){c.classList.toggle('active',c.dataset.cat==='همه')});
+  document.getElementById('searchInput').value='';sortMode='default';var ss=document.getElementById('sortSelect');if(ss)ss.value='default';
+  showPage('home');renderItems();toast('آگهی با موفقیت ثبت شد.');
+  ['newName','newPrice','newDeposit','newDesc','newPhoto'].forEach(function(id){document.getElementById(id).value=''});
+ };
+ if(file)readImage(file,finish);else finish(null);
+};
+var _rentItem=rentItem;
+rentItem=function(){
+ var f=document.getElementById('beforePhoto');f=f&&f.files[0];
+ _rentItem();
+ if(f)readImage(f,function(d){if(pendingAction&&pendingAction.type==='rent')pendingAction.before=d});
+};
+var _completePayment=completePayment;
+completePayment=function(){
+ var pa=pendingAction,wasRent=!!pa&&pa.type==='rent',bp=wasRent?pa.before:null;
+ _completePayment();
+ if(wasRent){if(typeof bp==='string')rentals[rentals.length-1].before=bp;showPage('myrentals')}
+};
+photoStep=function(id,step,input){
+ if(!input.files.length)return;
+ var r=rentals.find(function(x){return x.id===id});
+ readImage(input.files[0],function(d){r[step]=d||true;toast(step==='before'?'عکس قبل از تحویل ثبت شد.':'عکس بعد از تحویل ثبت شد.');renderRentals()});
+};
+var _renderRentals2=renderRentals;
+renderRentals=function(){
+ _renderRentals2();
+ document.querySelectorAll('#rentalList .panel').forEach(function(p,i){
+  var r=rentals[i];if(!r)return;var html='';
+  if(typeof r.before==='string')html+='<figure><img src="'+r.before+'" alt=""><figcaption>قبل از تحویل</figcaption></figure>';
+  if(typeof r.after==='string')html+='<figure><img src="'+r.after+'" alt=""><figcaption>بعد از تحویل</figcaption></figure>';
+  if(html){var t=document.createElement('div');t.className='thumbs';t.innerHTML=html;p.querySelector('.form-grid').after(t)}
+ });
+};
+function myAdsHtml(){
+ var mine=items.filter(function(x){return x.owner==='علی رضایی'});
+ if(!mine.length)return '<div class="empty">هنوز آگهی‌ای ثبت نکرده‌اید. از دکمه «ثبت آگهی» بالای صفحه شروع کنید.</div>';
+ return '<div class="grid">'+mine.map(function(x){return '<article class="card"><div class="item-img">'+x.icon+'</div><div class="card-body"><h3>'+x.name+'</h3><p class="price">'+money(x.price)+' <small>/ روز</small></p></div></article>'}).join('')+'</div>';
+}
+document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click',function(){if(b.dataset.tab==='myads')document.getElementById('profileContent').innerHTML=myAdsHtml()})});
+var _showPage=showPage;
+showPage=function(id){_showPage(id);if(id==='profile'){var t=document.querySelector('.tab.active');if(t&&t.dataset.tab==='myads')document.getElementById('profileContent').innerHTML=myAdsHtml()}};
+renderItems();
+</script> -->
+<style id="ios-skin">
+/* ===== iOS-style soft skin ===== */
+:root{--spring:cubic-bezier(.32,.72,0,1);--ease:cubic-bezier(.32,.72,0,1);--bg:#f2f2f7;--line:#e5e5ea;--soft:0 1px 2px rgba(0,0,0,.04),0 6px 22px rgba(0,0,0,.05);--lift:0 14px 38px rgba(0,0,0,.10)}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+*{-webkit-tap-highlight-color:transparent}
+body{background:var(--bg);-webkit-font-smoothing:antialiased}
+.topbar{background:rgba(255,255,255,.72);-webkit-backdrop-filter:saturate(180%) blur(22px);backdrop-filter:saturate(180%) blur(22px);border-bottom:1px solid rgba(0,0,0,.05);transition:box-shadow .4s var(--ease)}
+.topbar.scrolled{box-shadow:0 8px 28px rgba(0,0,0,.08)}
+.nav,.profile-tabs{position:relative;background:rgba(118,118,128,.12);padding:4px;border-radius:15px;gap:0}
+.nav button,.profile-tabs .tab{position:relative;z-index:1;border-radius:12px;transition:color .3s,transform .4s var(--spring)}
+.nav button{padding:8px 17px}
+.nav button.active,.profile-tabs .tab.active{background:transparent;color:var(--primary)}
+.nav button:active,.profile-tabs .tab:active{transform:scale(.94)}
+.profile-tabs{border-bottom:0;margin:20px 0}
+.profile-tabs .tab{flex:1;padding:9px 6px;font-size:13px}
+.seg-pill{position:absolute;top:4px;bottom:4px;left:0;border-radius:12px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.13);transition:transform .6s var(--spring),width .6s var(--spring),opacity .3s;z-index:0;pointer-events:none}
+.page.active{animation:pageIn .65s var(--spring) backwards}
+@keyframes pageIn{from{opacity:0;transform:translateY(20px) scale(.985)}to{opacity:1;transform:none}}
+.hero{border-radius:30px;box-shadow:0 20px 54px rgba(15,118,110,.22)}
+.hero-art{animation:floaty 6s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(2deg)}}
+.searchbar{border-radius:20px;transition:box-shadow .4s var(--ease)}
+.searchbar:focus-within{box-shadow:0 0 0 5px rgba(255,255,255,.3),0 12px 32px rgba(11,81,75,.3)}
+.trust-card{border:0;border-radius:20px;box-shadow:var(--soft);transition:transform .55s var(--spring),box-shadow .4s}
+.trust-card:hover{transform:translateY(-3px);box-shadow:var(--lift)}
+.section-head h2{font-size:25px;font-weight:800}
+.card{border:0;border-radius:24px;box-shadow:var(--soft);transition:transform .6s var(--spring),box-shadow .4s var(--ease)}
+.card:hover{transform:translateY(-5px);box-shadow:var(--lift)}
+.card:active{transform:scale(.98)}
+#itemGrid .card{animation:cardIn .75s var(--spring) backwards;animation-delay:calc(var(--i,0) * 60ms)}
+#itemGrid.no-anim .card{animation:none}
+@keyframes cardIn{from{opacity:0;transform:translateY(30px) scale(.95)}to{opacity:1;transform:none}}
+.item-img{height:180px;background:linear-gradient(145deg,#e8f6f3,#f6fcfa)}
+.item-img .item-photo{transition:transform .9s var(--ease)}
+.card:hover .item-photo{transform:scale(1.06)}
+.badge{border-radius:20px;background:rgba(255,255,255,.85);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.badge.vip{background:rgba(255,240,202,.92)}
+.favorite-btn{transition:transform .45s var(--spring),background .3s}
+.favorite-btn:active{transform:scale(.82)}
+.favorite-btn.pop{animation:heartPop .65s var(--spring)}
+@keyframes heartPop{from{transform:scale(.55)}to{transform:scale(1)}}
+.btn{border-radius:14px;transition:transform .45s var(--spring),background-color .25s,box-shadow .3s}
+.btn:active{transform:scale(.94)}
+.btn-primary{box-shadow:0 6px 16px rgba(15,118,110,.25)}
+.btn-primary:hover{box-shadow:0 9px 24px rgba(15,118,110,.33)}
+.btn-light,.btn-outline,.btn-danger{box-shadow:none}
+.chip{border:0;background:#fff;box-shadow:var(--soft);border-radius:999px;transition:transform .45s var(--spring),background .25s,color .25s}
+.chip:active{transform:scale(.93)}
+.chip.active{background:var(--primary);color:#fff}
+.icon-btn{border:0;box-shadow:var(--soft);border-radius:14px;transition:transform .45s var(--spring)}
+.icon-btn:active{transform:scale(.94)}
+.extra-tools select{border:0;box-shadow:var(--soft);border-radius:14px}
+.panel{border:0;border-radius:26px;box-shadow:var(--soft)}
+.grid .panel{transition:transform .55s var(--spring),box-shadow .4s}
+.grid .panel:hover{transform:translateY(-4px);box-shadow:var(--lift)}
+.stat{border-radius:18px;background:var(--bg)}
+.notice{border-radius:16px}
+.vip-banner{border-radius:26px}
+.step{border-radius:16px;transition:background .5s var(--ease)}
+.field input,.field select,.field textarea{background:var(--bg);border:1.5px solid transparent;border-radius:14px;padding:13px 14px;transition:background .3s,border-color .3s,box-shadow .35s var(--ease)}
+.field input:focus,.field select:focus,.field textarea:focus{background:#fff;border-color:rgba(15,118,110,.55);box-shadow:0 0 0 5px rgba(15,118,110,.12)}
+.field label.filepick{display:flex;align-items:center;gap:12px;background:var(--bg);border:1.5px dashed #c7c7cc;border-radius:16px;padding:10px 12px;cursor:pointer;font-size:13px;font-weight:500;color:#8e8e93;transition:background .3s,border-color .3s,transform .45s var(--spring)}
+.field label.filepick:hover{background:#eef7f5;border-color:rgba(15,118,110,.5)}
+.field label.filepick:active{transform:scale(.98)}
+.filepick input{display:none}
+.filepick .pick-btn{background:var(--primary);color:#fff;border-radius:11px;padding:8px 14px;font-weight:800;font-size:13px;white-space:nowrap}
+.filepick .pick-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#8e8e93}
+.filepick .pick-preview{display:none;width:46px;height:46px;border-radius:11px;object-fit:cover}
+.field label.filepick.has{border-style:solid;border-color:rgba(15,118,110,.45);background:#eaf8f3}
+.filepick.has .pick-preview{display:block}
+.filepick.has .pick-name{color:#17775f}
+.modal-back{background:rgba(0,0,0,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.modal{border-radius:30px;box-shadow:0 30px 80px rgba(0,0,0,.25);padding:20px 24px 26px}
+.modal::before{content:"";display:block;width:40px;height:5px;border-radius:3px;background:#d1d1d6;margin:0 auto 16px}
+.modal-back.show{animation:fadeIn .4s var(--ease)}
+.modal-back.show .modal{animation:sheetIn .75s var(--spring)}
+.modal-back.closing{animation:fadeOut .28s ease forwards}
+.modal-back.closing .modal{animation:sheetOut .28s cubic-bezier(.4,0,1,1) forwards}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes fadeOut{to{opacity:0}}
+@keyframes sheetIn{from{opacity:0;transform:translateY(64px) scale(.94)}to{opacity:1;transform:none}}
+@keyframes sheetOut{to{opacity:0;transform:translateY(44px) scale(.96)}}
+.close{border-radius:50%;background:rgba(118,118,128,.12);transition:transform .45s var(--spring)}
+.close:active{transform:scale(.86)}
+.pay-method{border-radius:16px;transition:transform .45s var(--spring),border-color .25s,background .25s}
+.pay-method:active{transform:scale(.96)}
+.chat-box{background:var(--bg);border-radius:18px}
+.bubble{border-radius:20px 20px 20px 6px;background:#e9e9eb;color:#1c1c1e;animation:bubbleIn .55s var(--spring)}
+.bubble.mine{background:var(--primary);color:#fff;border-radius:20px 20px 6px 20px}
+@keyframes bubbleIn{from{opacity:0;transform:translateY(12px) scale(.7)}to{opacity:1;transform:none}}
+.toast{left:50%;right:auto;bottom:auto;top:14px;transform:translate(-50%,-160%) scale(.9);opacity:0;border-radius:26px;background:rgba(28,28,30,.9);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);padding:14px 24px;max-width:min(92vw,520px);text-align:center;box-shadow:0 16px 44px rgba(0,0,0,.28);transition:transform .75s var(--spring),opacity .3s}
+.toast.show{opacity:1;transform:translate(-50%,0) scale(1)}
+.tabbar{display:none}
+@media(max-width:850px){
+ .tabbar{display:flex;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;gap:4px;background:rgba(255,255,255,.78);-webkit-backdrop-filter:saturate(180%) blur(24px);backdrop-filter:saturate(180%) blur(24px);border-radius:30px;padding:7px;box-shadow:0 12px 44px rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.7)}
+ .tabbar button{flex:1;border:0;background:transparent;display:flex;flex-direction:column;align-items:center;gap:3px;color:#8e8e93;font-size:11px;font-weight:700;padding:8px 4px;border-radius:22px;transition:color .3s,background .45s var(--spring),transform .45s var(--spring)}
+ .tabbar button svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:transform .55s var(--spring)}
+ .tabbar button.active{color:var(--primary);background:rgba(15,118,110,.11)}
+ .tabbar button.active svg{transform:scale(1.14)}
+ .tabbar button:active{transform:scale(.92)}
+ main.container{padding-bottom:112px}
+ footer{padding-bottom:112px}
+}
+@media(max-width:700px){
+ .modal-back{align-items:flex-end;padding:0}
+ .modal{width:100%;max-height:92vh;border-radius:30px 30px 0 0;padding-bottom:max(26px,env(safe-area-inset-bottom))}
+ @keyframes sheetIn{from{opacity:1;transform:translateY(100%)}to{opacity:1;transform:none}}
+ @keyframes sheetOut{to{opacity:1;transform:translateY(100%)}}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+<nav class="tabbar" id="tabbar">
+<button class="active" data-page="home"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/></svg><span>بازار</span></button>
+<button data-page="myrentals"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>اجاره‌ها</span></button>
+<button data-page="vip"><svg viewBox="0 0 24 24"><path d="M12 3.8l2.4 5 5.4.7-4 3.8 1 5.4L12 16.1l-4.8 2.6 1-5.4-4-3.8 5.4-.7z"/></svg><span>VIP</span></button>
+<button data-page="profile"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.7"/><path d="M4.8 20c.9-3.6 3.8-5.4 7.2-5.4s6.3 1.8 7.2 5.4"/></svg><span>پروفایل</span></button>
+</nav>
+<!-- <script>
+(function(){
+ /* spring easing, generated so the motion really bounces like iOS */
+ try{if(window.CSS&&CSS.supports&&CSS.supports('transition-timing-function','linear(0,1)')){var z=.62,w=11,wd=w*Math.sqrt(1-z*z),pts=[],n=44;for(var i=0;i<=n;i++){var t=i/n,v=i===n?1:1-Math.exp(-z*w*t)*(Math.cos(wd*t)+(z*w/wd)*Math.sin(wd*t));pts.push(Math.round(v*1000)/1000)}document.documentElement.style.setProperty('--spring','linear('+pts.join(', ')+')')}}catch(e){}
+ /* sheets: open, animated close, tap outside to dismiss */
+ window.openModal=function(id){var m=document.getElementById(id);if(!m)return;m.classList.remove('closing');m.classList.add('show')};
+ window.closeModal=function(id){var m=document.getElementById(id);if(!m||!m.classList.contains('show')||m.classList.contains('closing'))return;m.classList.add('closing');setTimeout(function(){if(m.classList.contains('closing'))m.classList.remove('show','closing')},280)};
+ document.querySelectorAll('.modal-back').forEach(function(m){m.addEventListener('mousedown',function(e){if(e.target===m)window.closeModal(m.id)})});
+ /* sliding segmented control */
+ function makeSegment(c){
+  if(!c||c.dataset.seg)return;c.dataset.seg='1';
+  var pill=document.createElement('span');pill.className='seg-pill';c.insertBefore(pill,c.firstChild);
+  var first=true;
+  function place(){var a=c.querySelector('button.active');if(!a||!a.offsetWidth){pill.style.opacity='0';return}
+   if(first)pill.style.transition='none';
+   pill.style.opacity='1';pill.style.width=a.offsetWidth+'px';pill.style.transform='translateX('+a.offsetLeft+'px)';
+   if(first){void pill.offsetWidth;pill.style.transition='';first=false}}
+  new MutationObserver(place).observe(c,{attributes:true,subtree:true,attributeFilter:['class']});
+  if(window.ResizeObserver)new ResizeObserver(place).observe(c);
+  window.addEventListener('resize',place);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(place);
+  place();
+ }
+ makeSegment(document.querySelector('.nav'));makeSegment(document.querySelector('.profile-tabs'));
+ /* mobile tab bar */
+ var tb=document.getElementById('tabbar');
+ tb.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){window.showPage(b.dataset.page)})});
+ var _sp=window.showPage;
+ window.showPage=function(id){_sp(id);tb.querySelectorAll('button').forEach(function(b){b.classList.toggle('active',b.dataset.page===id)})};
+ /* staggered cards, calm re-renders when only a heart changes */
+ var _ri=window.renderItems;
+ window.renderItems=function(){var g=document.getElementById('itemGrid');if(g)g.classList.toggle('no-anim',!!window.__keepAnim);_ri();document.querySelectorAll('#itemGrid .card').forEach(function(c,i){c.style.setProperty('--i',i)})};
+ var _tf=window.toggleFavorite;
+ window.toggleFavorite=function(id){window.__keepAnim=true;_tf(id);window.__keepAnim=false;var b=document.querySelector('#itemGrid .favorite-btn[onclick="toggleFavorite('+id+')"]');if(b&&favorites.has(id))b.classList.add('pop')};
+ /* header shadow on scroll */
+ window.addEventListener('scroll',function(){document.querySelector('.topbar').classList.toggle('scrolled',window.scrollY>6)},{passive:true});
+ /* Persian photo picker instead of the browser's English file input */
+ function enhanceFiles(){
+  document.querySelectorAll('input[type=file]:not([data-enh])').forEach(function(inp){
+   inp.dataset.enh='1';
+   var lab=document.createElement('label');lab.className='filepick';
+   inp.parentNode.insertBefore(lab,inp);
+   var pv=document.createElement('img');pv.className='pick-preview';pv.alt='';
+   var nm=document.createElement('span');nm.className='pick-name';nm.textContent='عکسی انتخاب نشده';
+   var bt=document.createElement('span');bt.className='pick-btn';bt.textContent='انتخاب عکس';
+   lab.appendChild(pv);lab.appendChild(nm);lab.appendChild(bt);lab.appendChild(inp);
+   inp.addEventListener('change',function(){var f=inp.files&&inp.files[0];lab.classList.toggle('has',!!f);if(f){nm.textContent=f.name;pv.src=URL.createObjectURL(f)}else{nm.textContent='عکسی انتخاب نشده'}});
+  });
+ }
+ new MutationObserver(enhanceFiles).observe(document.body,{childList:true,subtree:true});
+ enhanceFiles();
+ window.renderItems();
+})();
+</script> -->
+<script src="f.js"></script>
+</body></html>
